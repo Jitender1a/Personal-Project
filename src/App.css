@@ -1,3 +1,9 @@
+body{
+  background-image: url(Supreme.jpg);
+  background-size: cover;
+
+}
+
 .App {
   text-align: center;
 }
@@ -18,6 +24,18 @@
   color: white;
 }
 
+.sneakers{
+  color: red;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.cart{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  background-color: grey;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -29,4 +47,42 @@
   to {
     transform: rotate(360deg);
   }
+
+
+}
+
+.nav-bar {
+  background-color:white;
+  font-family: 'Pacifico', cursive;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-right: 50px;
+
+}
+
+.nav-bar a:hover {
+  color: red;
+}
+
+.nav-bar h1 {
+  color: red;
+  margin-left: 25px;
+  cursor: pointer;
 }
