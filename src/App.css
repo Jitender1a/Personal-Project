@@ -1,5 +1,5 @@
 body{
-  background-image: url(Supreme.jpg);
+  background-color: white;
   background-size: cover;
 
 }
@@ -12,7 +12,6 @@ body{
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,7 +24,7 @@ body{
 }
 
 .sneakers{
-  color: red;
+  color: black;
   text-align: center;
   font-family: 'Pacifico', cursive;
 }
@@ -33,22 +32,18 @@ body{
 .cart{
   text-align: center;
   font-family: 'Pacifico', cursive;
-  background-color: grey;
+}
+.nav3 {
+  padding-left: 70px;
+  float: left;
+}
+
+.nav3:hover{
+  cursor: pointer;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-
-
 }
 
 .nav-bar {
@@ -82,7 +77,11 @@ body{
 }
 
 .nav-bar h1 {
-  color: red;
+  color: white;
   margin-left: 25px;
   cursor: pointer;
+}
+
+.nav-bar h1:hover{
+  color:red;
 }

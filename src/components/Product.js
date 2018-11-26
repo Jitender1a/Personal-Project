@@ -12,13 +12,16 @@ class Product extends Component {
     }
 
     render() {
-        let {name, price, id} = this.props.product
+        let {name, price, img, description, id} = this.props.product
         return (
-            <div>
+            <div class='nav3'>
+                <img  width="500px" height="400px" src={img} alt="" />   
                 <h3>{name}</h3>
                 <p>${price}</p>
+                <p>{description}</p>
                 <button onClick={() => this.addToCart(id)} >Add To Cart</button>
-            </div>
+            </div>    
+
         )
     }
 }

@@ -4,10 +4,8 @@ let initialState = {
     cart: []
 }
 
-
 const GET_PRODUCTS = 'GET_PRODUCTS'
 const GET_CART = 'GET_CART'
-
 
 export default function reducer(state = initialState, action) {
     switch(action.type) {
@@ -15,13 +13,12 @@ export default function reducer(state = initialState, action) {
         return Object.assign({}, state, {products: action.payload})
         
         case GET_CART: 
-        return {...state, cart: action.payload}
+        return Object.assign({},state, {cart: action.payload})
         
         default: 
             return state
     }
 }
-
 
 export function getProducts(products) {
     return {
