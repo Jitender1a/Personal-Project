@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ProductsList from './components/ProductsList'
 import Cart from './components/Cart'
+import Home from './components/Home'
 import axios from 'axios'
 import Nav from './components/Nav'
 import {connect} from 'react-redux'
@@ -22,6 +23,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={ProductsList} />
           <Route path='/cart' component={Cart} />
+          <Route path='/Home' component={Home}/>
         </Switch>
       </div>
     );
