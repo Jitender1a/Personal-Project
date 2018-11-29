@@ -14,7 +14,9 @@ class Cart extends Component {
 
     checkout = () => {
         if(this.props.cart.length) {
+            console.log(11)
             axios.delete('/api/cart/checkout').then(results => {
+
                 alert('Items Purchased')
                 this.props.getCart(results.data)
             })

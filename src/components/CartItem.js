@@ -24,10 +24,11 @@ class CartItem extends Component {
     }
 
     render() {
-        let {name, price, quantity} = this.props.cartItem
+        let {name, price, quantity,img} = this.props.cartItem
         return (
             <div>
                 <h3>{name}</h3>
+                <img width="100px" height="100px" src={img} alt="" /> 
                 <p>Quantity {quantity}</p>
                 <button onClick={() => this.updateQuantity('up')}>+</button>
                 <button onClick={() => this.updateQuantity('down')}>-</button>

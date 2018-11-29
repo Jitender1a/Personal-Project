@@ -6,8 +6,8 @@ function Nav(props) {
         <div className='nav-bar'>
             <h1 onClick={() => props.history.push('/')}>SNEAKERHEADZ</h1>
             <div>
-                <Link to='/Home'>Home</Link>
-                <Link to='/'>Sneakers</Link>
+                <Link to='/'>Home</Link>
+                <Link to='/ProductsList'>Sneakers</Link>
                 <Link to='/cart'>Cart</Link>
             </div>
         </div>

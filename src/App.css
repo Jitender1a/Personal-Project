@@ -12,6 +12,7 @@ body{
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,6 +37,17 @@ body{
 .nav3 {
   padding-left: 70px;
   float: left;
+}
+@media(max-width:500px){
+  .nav3 {
+    padding:0;
+  }
+}
+
+@media(max-width:500px){
+  .nav3 img {
+    width: 350px;
+  }
 }
 
 .nav3:hover{
@@ -75,6 +87,13 @@ body{
 
 }
 
+@media(max-width:500px){
+  .nav-bar a{
+    font-size:15px;
+    margin-right: 10px;
+    padding-right:15px; 
+  }
+}
 .nav-bar a:hover {
   color: red;
 }
@@ -85,6 +104,12 @@ body{
   cursor: pointer;
 }
 
+@media(max-width:500px){
+  .nav-bar h1{
+    font-size:15px;
+  }
+}
+
 .nav-bar h1:hover{
   color:red;
 }
@@ -93,7 +118,13 @@ body{
   text-align: center;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
-  
+}
+
+
+@media(max-width:500px){
+  .collection {
+    font-size:20px;
+  }
 }
 
 :root {

@@ -59,6 +59,7 @@ module.exports = {
         })
     },
     checkout: (req, res) => {
+        
         const db = req.app.get('db')
         db.checkout().then(cart => {
             res.status(200).send(cart)
