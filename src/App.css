@@ -32,7 +32,9 @@ body{
 
 .cart{
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  color: white;
+  background-color: black;
+  border: solid;
 }
 .nav3 {
   padding-left: 70px;
@@ -70,12 +72,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background:
-  radial-gradient(black 15%, transparent 16%) 0 0,
-  radial-gradient(black 15%, transparent 16%) 8px 8px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color:#282828;
+  background-color:black;
   background-size:16px 16px;
 }
 
@@ -89,7 +86,7 @@ body{
 
 @media(max-width:500px){
   .nav-bar a{
-    font-size:15px;
+    font-size:11px;
     margin-right: 10px;
     padding-right:15px; 
   }
@@ -116,8 +113,19 @@ body{
 
 .collection{
   text-align: center;
-  font-family: 'Pacifico', cursive;
   font-size: 50px;
+  color: black;
+  transition: transform .2s;
+  
+}
+
+.collection:hover{
+  transform: scale(.9)
+}
+
+.EnterTheCollection{
+  text-decoration: none;
+  color:black;
 }
 
 
@@ -126,6 +134,7 @@ body{
     font-size:20px;
   }
 }
+
 
 :root {
   --size: 400px;
@@ -233,4 +242,126 @@ body {
   background-image: var(--s6-bg);
   background-size: cover;
   transform: translateY(var(--half)) rotateX(90deg);
+}
+
+.brand{
+  text-align: center;
+  color: white;
+  transition: transform .2s;
+  background-color: black;
+ }
+
+ .brand:hover {
+  transform: scale(.9);
+ }
+
+ .topSeller{
+   text-align: center;
+  transition: transform .2s;
+ }
+.topSeller:hover{
+  transform: scale(.9);
+}
+
+.services{
+  color:white;
+  text-align: center;
+  background-color: black;
+  
+}
+
+
+.Linkss{
+  text-decoration: none;
+  color: white;
+}
+
+.return{
+ font-size: 20px;
+}
+
+.returns{
+  padding-top: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.intro{
+  text-align: center;
+}
+
+.rr{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.rrInfo{
+  text-align: center;
+}
+
+.shipping{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.shippingInfo{
+  text-align: center;
+}
+
+.cancellations{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.ccInfo{
+  text-align: center;
+}
+
+.About{
+  position: relative;
+  background-image: url('Aboutpic.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Hello{
+  color: White;
+  text-align: center;
+}
+
+.ztogether{
+  position: relative;
+  background-image:url('ztogether.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.together{
+  color: white;
+  text-align: center;
+}
+
+.AboutUs{
+  text-decoration: none;
+  color: white;
+}
+
+.twitter{
+  text-decoration: none;
+  color: white;
+}
+
+.facebook{
+  text-decoration: none;
+  color: white;
+}
+
+.facebookdiv{
+  padding-bottom: 25px;
 }

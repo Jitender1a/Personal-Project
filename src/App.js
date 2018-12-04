@@ -3,6 +3,8 @@ import './App.css';
 import ProductsList from './components/ProductsList'
 import Cart from './components/Cart'
 import Home from './components/Home'
+import Returns from './components/Returns'
+import About from './components/About'
 import axios from 'axios'
 import Nav from './components/Nav'
 import {connect} from 'react-redux'
@@ -24,6 +26,8 @@ class App extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/cart' component={Cart} />
           <Route path='/ProductsList' component={ProductsList}/>
+          <Route path='/Returns' component={Returns}/>
+          <Route path='/About' component={About}/>
         </Switch>
       </div>
     );

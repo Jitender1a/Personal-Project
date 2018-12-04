@@ -7,6 +7,7 @@ function Nav(props) {
             <h1 onClick={() => props.history.push('/')}>SNEAKERHEADZ</h1>
             <div>
                 <Link to='/'>Home</Link>
+                <Link to='/About'>About Us</Link>
                 <Link to='/ProductsList'>Sneakers</Link>
                 <Link to='/cart'>Cart</Link>
             </div>

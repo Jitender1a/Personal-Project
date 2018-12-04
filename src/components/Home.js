@@ -1,12 +1,20 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-
-
+import addidas from '../Adidas.jpg'
+import supreme from '../Supreme1.jpg'
+import nike from '../nike.jpg'
+import jordan from '../jordan.jpg'
+import yeezy from '../yeezy1.jpg'
+import nikeS from '../nikeS.jpg'
+import jordanS from '../jordanS.jpg'
+import nmd from '../nmdS.jpg'
+import yzyS from '../yzyS.jpg'
+import nike2S from '../nike2S.jpg'
 class Home extends Component {
     render(){    
     return (
-    
-        <div class="wrapper">
+     <div>
+         <div class="wrapper">
              <div class="cube">
              <div class="side s-1"></div>
              <div class="side s-2"></div>
@@ -15,10 +23,51 @@ class Home extends Component {
              <div class="side s-5"></div>
              <div class="side s-6"></div>
             </div>
+         </div> 
+         
+         <div class='collection'>
+             <Link className='EnterTheCollection'to='/ProductsList'>Enter The Collection</Link>
+         </div>
+
+         <div class="brand">
+            <h1>Brands</h1>
+            <img src={addidas} alt="" width="300px" height="300px"></img>
+            <img src={supreme} alt="" width="300px" height="300px"></img>
+            <img src={nike} alt="" width="400px" height="300px"></img> 
+            <img src={jordan} alt="" width="300px" height="300px"></img> 
+            <img src={yeezy} alt="" width="300px" height="300px"></img>     
+    
+         </div>
+
+         <div class="topSeller">
+            <h1>Top Sellers</h1>
+            <img src={nikeS} alt="" width="300px" height="300px"></img> 
+            <img src={jordanS} alt="" width="300px" height="300px"></img>
+            <img src={nmd} alt="" width="300px" height="300px"></img>
+            <img src={yzyS} alt="" width="300px" height="300px"></img>
+            <img src={nike2S} alt="" width="300px" height="300px"></img>
+         </div>
         
-             <div class='collection'>
-             <Link to='/ProductsList'>Enter The Collection</Link>
+         <div class='services'>
+            <div>
+            <h1>Services</h1>       
+            <Link  className='Linkss'to='/Returns'>Delivery & Returns</Link>
             </div>
+            <div>-</div>
+            <div>
+            <Link className="AboutUs" to='/About'>About Us</Link>
+            </div>
+            <div>-</div>
+            <div>
+            <a className="twitter" href="https://twitter.com">Twitter</a>
+            </div>
+            <div>-</div>
+            <div className="facebookdiv">
+            <a className="facebook" href="https://www.facebook.com/">Facebook</a>
+            </div>
+
+         </div>
+     
       </div>  
       
         )
