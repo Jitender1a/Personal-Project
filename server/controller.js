@@ -64,5 +64,12 @@ module.exports = {
         db.checkout().then(cart => {
             res.status(200).send(cart)
         })
-    }
+    },
+    item:(req,res)=>{
+        const db = req.app.get('db')
+
+        db.getItem([req.params.id]).then(item=>{
+            res.status(200).send(item[0]);
+        })
+    },
 }

@@ -6,10 +6,12 @@ function Nav(props) {
         <div className='nav-bar'>
             <h1 onClick={() => props.history.push('/')}>SNEAKERHEADZ</h1>
             <div>
+                <div className="navwords">
                 <Link to='/'>Home</Link>
                 <Link to='/About'>About Us</Link>
                 <Link to='/ProductsList'>Sneakers</Link>
-                <Link to='/cart'>Cart</Link>
+                <Link to='/cart'><i class="fas fa-shopping-cart"></i></Link>
+                </div>
             </div>
         </div>
     )

@@ -31,39 +31,39 @@ class Home extends Component {
 
          <div class="brand">
             <h1>Brands</h1>
-            <img src={addidas} alt="" width="300px" height="300px"></img>
-            <img src={supreme} alt="" width="300px" height="300px"></img>
-            <img src={nike} alt="" width="400px" height="300px"></img> 
-            <img src={jordan} alt="" width="300px" height="300px"></img> 
-            <img src={yeezy} alt="" width="300px" height="300px"></img>     
+            <img src={addidas} alt="" width="250px" height="250px"></img>
+            <img src={supreme} alt="" width="250px" height="250px"></img>
+            <img src={nike} alt="" width="250px" height="250px"></img> 
+            <img src={jordan} alt="" width="250px" height="250px"></img> 
+            <img src={yeezy} alt="" width="250px" height="250px"></img>     
     
          </div>
 
          <div class="topSeller">
             <h1>Top Sellers</h1>
-            <img src={nikeS} alt="" width="300px" height="300px"></img> 
-            <img src={jordanS} alt="" width="300px" height="300px"></img>
-            <img src={nmd} alt="" width="300px" height="300px"></img>
-            <img src={yzyS} alt="" width="300px" height="300px"></img>
-            <img src={nike2S} alt="" width="300px" height="300px"></img>
+            <img src={nikeS} alt="" width="250px" height="250px"></img> 
+            <img src={jordanS} alt="" width="250px" height="250px"></img>
+            <img src={nmd} alt="" width="250px" height="250px"></img>
+            <img src={yzyS} alt="" width="250px" height="250px"></img>
+            <img src={nike2S} alt="" width="250px" height="250px"></img>
          </div>
         
          <div class='services'>
             <div>
             <h1>Services</h1>       
-            <Link  className='Linkss'to='/Returns'>Delivery & Returns</Link>
+            <Link  className='AboutUs'to='/Returns'>Delivery & Returns</Link>
             </div>
-            <div>-</div>
+            <div>&#10022;</div>
             <div>
             <Link className="AboutUs" to='/About'>About Us</Link>
             </div>
-            <div>-</div>
+            <div>&#10022;</div>
             <div>
-            <a className="twitter" href="https://twitter.com">Twitter</a>
+            <a className="twitter" href="https://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
-            <div>-</div>
+            <div>&#10022;</div>
             <div className="facebookdiv">
-            <a className="facebook" href="https://www.facebook.com/">Facebook</a>
+            <a className="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x"></i></a>
             </div>
 
          </div>

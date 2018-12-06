@@ -24,16 +24,16 @@ class CartItem extends Component {
     }
 
     render() {
-        let {name, price, quantity,img} = this.props.cartItem
+        let {name,quantity,img} = this.props.cartItem
         return (
             <div>
                 <h3>{name}</h3>
                 <img width="100px" height="100px" src={img} alt="" /> 
                 <p>Quantity {quantity}</p>
-                <button onClick={() => this.updateQuantity('up')}>+</button>
-                <button onClick={() => this.updateQuantity('down')}>-</button>
-                <button onClick={this.deleteItem}>Delete</button>
-                <p>${Math.floor(price * quantity * 100) / 100}</p>
+                <button className="up" onClick={() => this.updateQuantity('up')}>+</button>
+                <button className="up" onClick={() => this.updateQuantity('down')}>-</button>
+                <button className="Deletebutton" onClick={this.deleteItem}>Delete</button>
+                {/* <p>${Math.floor(price * quantity * 100) / 100}</p> */}
             </div>
         )
     }

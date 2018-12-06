@@ -5,11 +5,13 @@ import Cart from './components/Cart'
 import Home from './components/Home'
 import Returns from './components/Returns'
 import About from './components/About'
+import Item from './components/Item'
 import axios from 'axios'
 import Nav from './components/Nav'
 import {connect} from 'react-redux'
 import {getProducts} from './ducks/reducer'
 import {Switch, Route, withRouter} from 'react-router-dom'
+
 
 class App extends Component {
   componentDidMount() {
@@ -20,6 +22,7 @@ class App extends Component {
 
   render() {
     return (
+      
       <div>
         <Nav/>
         <Switch>
@@ -28,7 +31,12 @@ class App extends Component {
           <Route path='/ProductsList' component={ProductsList}/>
           <Route path='/Returns' component={Returns}/>
           <Route path='/About' component={About}/>
+          <Route path='/Item/:id' component={Item}/>
+
         </Switch>
+
+       
+
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 class Returns extends Component{
     render(){
@@ -20,6 +21,27 @@ class Returns extends Component{
             
             <h1 class='cancellations'>Cancellations</h1>
             <p class='ccInfo'>We try to ship orders as quickly as possible so they get to customers faster. This means we cannot cancel an order after the shipping process has begun. We will do our best to process cancellation requests, but cannot guarantee that we will be able to do so. Cancellation requests submitted after the shipping process has begun are subject to our standard return policy</p>
+           
+            <div class='services'>
+            <div>
+            <h1>Services</h1>       
+            <Link  className='AboutUs'to='/Returns'>Delivery & Returns</Link>
+            </div>
+            <div>&#10022;</div>
+            <div>
+            <Link className="AboutUs" to='/About'>About Us</Link>
+            </div>
+            <div>&#10022;</div>
+            <div>
+            <a className="twitter" href="https://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <div>&#10022;</div>
+            <div className="facebookdiv">
+            <a className="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+
+             </div>
+           
             </div>
             
         )

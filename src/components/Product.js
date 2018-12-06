@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import axios from 'axios'
 import {getCart} from '../ducks/reducer'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
+
 
 class Product extends Component {
 
@@ -12,14 +14,15 @@ class Product extends Component {
     }
 
     render() {
-        let {name, price, img, description, id} = this.props.product
+        let {name, img,  id} = this.props.product
         return (
             <div class='nav3'>
-                <img width="500px" height="400px" src={img} alt="" />   
+                 <Link className="productLink" to={`/Item/${id}`}><img width="500px" height="400px" src={img} alt="" /></Link>
                 <h3>{name}</h3>
-                <p>${price}</p>
-                <p>{description}</p>
-                <button onClick={() => this.addToCart(id)} >Add To Cart</button>
+                {/* <p>${price}</p> */}
+                {/* <p>{description}</p> */}
+                {/* <Link className="productLink" to={`/Item/${id}`}>More Info</Link> */}
+                {/* <button onClick={() => this.addToCart(id)} >Add To Cart</button> */}
             </div>    
 
         )
