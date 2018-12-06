@@ -1,12 +1,14 @@
 require('dotenv').config()
 
+
 const express = require('express')
     , bodyParser = require('body-parser')
     , controller = require('./controller')
     , massive = require('massive')
     , server = require('./server')
+    
 
-const app = express();
+    const app = express();
 
 const {SERVER_PORT, CONNECTION_STRING} = process.env
 
@@ -16,6 +18,9 @@ massive(CONNECTION_STRING).then(db => {
     app.set('db', db)
     console.log('connected')
 })
+
+//middleware
+app.use( express.static( `${__dirname}/../build` ) );
 
 app.get('/api/products', controller.getProducts)
 
