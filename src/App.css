@@ -458,7 +458,7 @@ body {
   .creditCard {
     margin: 0%;
     border: none;
-    border-radius: nonde;
+    border-radius: none;
   }
 }  
 
@@ -469,7 +469,8 @@ body {
 
 
 .navwords{
-  font-family: none;
+  font-family: 'Josefin Slab', serif;
+
 }
 
 .none{
