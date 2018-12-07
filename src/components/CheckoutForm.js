@@ -17,7 +17,10 @@ class CheckoutForm extends Component {
     //   body: token.id
     // });
     let id = token.token.id;
-    axios.post('/api/charge', {id}).then(() => {this.setState({complete: true})})
+    axios.post('/api/charge', {id}).then(() => {
+      this.setState({complete: true})
+      this.props.checkout()
+    })
 
   }
 
