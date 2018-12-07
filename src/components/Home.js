@@ -25,9 +25,10 @@ class Home extends Component {
             </div>
          </div> 
          
-         <div class='collection'>
+         <div className="none">none</div>
+         {/* <div class='collection'>
              <Link className='EnterTheCollection'to='/ProductsList'>Enter The Collection</Link>
-         </div>
+         </div> */}
 
          <div class="brand">
             <h1>Brands</h1>

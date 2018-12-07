@@ -26,6 +26,7 @@ class Item extends Component{
     render(){
         let {name, price, img, description, id} = this.state.item
         return(
+            
             <div class="item">
                 <div>
                 <img className="itemImage"width="500px" height="400px" src={img} alt="" />   
