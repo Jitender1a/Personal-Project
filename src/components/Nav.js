@@ -11,6 +11,7 @@ function Nav(props) {
                 <Link to='/About'>About Us</Link>
                 <Link to='/ProductsList'>Sneakers</Link>
                 <Link to='/cart'><i class="fas fa-shopping-cart"></i></Link>
+                <Link to='/LoginHome'><i class="fas fa-user"></i></Link>
                 </div>
             </div>
         </div>

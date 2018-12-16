@@ -93,7 +93,7 @@ body{
   .nav-bar a{
     font-size:11px;
     margin-right: 10px;
-    padding-right:15px; 
+    padding-right:10px; 
   }
 }
 .nav-bar a:hover {
@@ -514,4 +514,114 @@ body {
 
 .facebookdiv1{
   padding-bottom: 25px;
+}
+
+.LoginHome{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Josefin Slab', serif;
+
+}
+
+
+.RegHome{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Josefin Slab', serif;
+
+}
+
+.LoginLink{
+  text-decoration: none;
+  color: Black;
+}
+.LoginLink:hover{
+  color: grey;
+}
+.RegLink{
+  text-decoration: none;
+  color: Black;
+}
+
+.RegLink:hover{
+  color: grey;
+}
+.user{
+  
+  border: solid;
+  margin: 5% 35% 5% 35%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+@media(max-width:500px){
+  .user{
+    margin: 5% 10% 5% 10%;
+  }
+}
+
+
+.loginPage{
+  text-align: center;
+  border: solid;
+  margin: 5% 35% 5% 35%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: 'Josefin Slab', serif;
+
+}
+
+@media(max-width:500px){
+  .loginPage{
+    margin: 5% 10% 5% 10%;
+  }
+}
+
+.RegistrationPage{
+  text-align: center;
+  border: solid;
+  margin: 5% 30% 5% 30%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: 'Josefin Slab', serif;
+}
+
+@media(max-width:500px){
+  .RegistrationPage{
+    margin: 5% .05% 5% .05%;
+  }
+}
+
+.LoginButton{
+  font-size: 13.5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: black;
+}
+.LoginButton:hover {
+  background-color:grey; 
+  color: white;
+}
+
+.line {
+  border: 0;
+  height: 3px;
+  background-color:lightgrey;
+  width: 100%;
+}
+
+.LogOutButton{
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color:black;
+}
+
+.LogOutButton:hover {
+  background-color:grey; 
+  color: white;
 }

@@ -6,6 +6,10 @@ import Home from './components/Home'
 import Returns from './components/Returns'
 import About from './components/About'
 import Item from './components/Item'
+import Login from './components/Login'
+import Register from './components/Register'
+import LoginHome from './components/LoginHome'
+import Logout from './components/Logout'
 import axios from 'axios'
 import Nav from './components/Nav'
 import {connect} from 'react-redux'
@@ -32,7 +36,10 @@ class App extends Component {
           <Route path='/Returns' component={Returns}/>
           <Route path='/About' component={About}/>
           <Route path='/Item/:id' component={Item}/>
-
+          <Route path='/Login' component={Login}/>
+          <Route path='/Register' component={Register}/>
+          <Route path='/LoginHome' component={LoginHome}/>
+          <Route path='/Logout' component={Logout}/>
         </Switch>
 
        

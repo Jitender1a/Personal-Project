@@ -1,18 +1,23 @@
-require('dotenv').config()
-
-
 const express = require('express')
     , bodyParser = require('body-parser')
     , controller = require('./controller')
     , massive = require('massive')
     , server = require('./server')
+    , session = require('express-session')
+    , AuthCtrl = require('./Auth')
     
-
+    require('dotenv').config()
     const app = express();
 
-const {SERVER_PORT, CONNECTION_STRING} = process.env
+const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env
 
 app.use(bodyParser.json())
+app.use(session({
+    secret: SESSION_SECRET,
+    resave: true,
+    saveUninitialized: false
+  }))
+
 
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db)
@@ -35,7 +40,11 @@ app.delete('/api/cart/:id', controller.deleteItem)
 // server 
 app.post('/api/charge', server.Credit)
 
-
+//Auth.js
+app.post('/auth/login', AuthCtrl.login)
+app.post('/auth/register', AuthCtrl.register)
+app.get('/auth/logout', AuthCtrl.logout)
+app.get('/auth/currentUser', AuthCtrl.getCurrentUser)
 
 app.listen(SERVER_PORT, () => console.log(' nodemon is connected', SERVER_PORT))
  

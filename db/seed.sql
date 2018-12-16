@@ -21,3 +21,10 @@ values ('Nike Vapormax FK', 995 ,'https://www.flightclub.com/media/catalog/produ
 values ('Nike Max 90', 900 ,'https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/0/5/051987_01.jpg','Size:12'),
 values ('Kobe Prelude 6', 500 ,'https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/0/4/042044_01.jpg','Size:8'),
 values ('Kobe 11 Elite', 700 ,'https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/6/3/63596253257-nike-kobe-11-elite-low-ftb-fade-to-black-black-black-042575_1.jpg','Size:9.5'),
+
+Create Table users(
+    id serial Primary Key,
+    name varchar,
+    email varchar,
+    password varchar
+);
